@@ -1,0 +1,9 @@
+project: savantenvs/openweave-core
+target: FuzzCertificateConversion
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzCertificateConversion/testsuite
+
+cmds:
+  - cmd: /mayhem/FuzzCertificateConversion
+    libfuzzer: true
