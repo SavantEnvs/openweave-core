@@ -1,0 +1,9 @@
+project: savantenvs/openweave-core
+target: FuzzPASEInitiatorStep2
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzPASEInitiatorStep2/testsuite
+
+cmds:
+  - cmd: /mayhem/FuzzPASEInitiatorStep2
+    libfuzzer: true

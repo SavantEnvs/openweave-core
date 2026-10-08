@@ -1,0 +1,9 @@
+project: savantenvs/openweave-core
+target: FuzzPASEKeyConfirm
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzPASEKeyConfirm/testsuite
+
+cmds:
+  - cmd: /mayhem/FuzzPASEKeyConfirm
+    libfuzzer: true
